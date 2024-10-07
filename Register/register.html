@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE ACCOUNT</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body class="bg-cover">
+    <div class="container-fluid">
+        <div class="row d-flex align-content-center justify-content-center">
+            <!-- Right Section -->
+            <div class="col-md-5 d-flex align-items-center justify-content-center mt-5">
+                <div class="container login p-5">
+                    <h1 class="text-center">CREATE ACCOUNT</h1>
+
+                    <!-- Form -->
+                    <form class="needs-validation" novalidate>
+                        <!-- Username -->
+                        <div class="form-control">
+                            <input type="text" id="usernameInput" class="usernameInput" required>
+                            <label for="usernameInput">USERNAME</label>
+                        </div>
+                        <!-- Password -->
+                        <div class="form-control">
+                            <input type="password" id="passwordInput" class="passwordInput" required>
+                            <label for="passwordInput">PASSWORD</label>
+                        </div>
+                        <a href="/Login/login.html" class="btn">
+                            <button class="create-account-button">CREATE ACCOUNT</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

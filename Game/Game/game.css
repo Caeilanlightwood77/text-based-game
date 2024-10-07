@@ -1,0 +1,57 @@
+body{
+    background: url(/Images/queunkach___commission_by_laspinter_deunvos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Tempus Sans ITC";
+}
+
+.container{
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 85vh;
+    border-radius: 1.5em;
+}
+
+.row{
+    border-radius: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+}
+
+.row-md-2{
+    border-radius: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+}
+
+p{
+    font-family: "Tempus Sans ITC";
+    text-align: justify;
+}
+
+input{
+    border-radius: 0.7em;
+    height: 10vh;
+    outline: none;
+}
+
+.button {
+    font-family: "Tempus Sans ITC";
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 1.5em;
+  }
+
+.button:hover {background-color: #f1f3f170}
+
+.button:active {
+  background-color: #000000;
+  transform: translateY(4px);
+}

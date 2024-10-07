@@ -1,0 +1,77 @@
+* {
+    font-family: "Tempus Sans ITC";
+}
+
+body {
+    background-image: url(/Images/Black\ Homepage\ Kitten.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for opacity */
+    z-index: -1;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.word {
+    height: 80vh;
+}
+
+.buts {
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hover-effect:hover{
+    transition: background-color 0.5s ease; /* Add a smooth transition effect */
+    box-shadow: 0 0 5px beige;
+}
+
+/* Hover effect for navbar items */
+.nav-item .nav-link {
+    position: relative;
+}
+
+.nav-item .nav-link::before,
+.nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: beige; /* Change to your preferred underline color */
+    transition: width 0.5s ease; /* Add a smooth transition effect */
+}
+
+.nav-item .nav-link::before {
+    transform: translateX(-50%);
+}
+
+.nav-item .nav-link::after {
+    transform: translateX(-50%);
+}
+
+.nav-item .nav-link:hover::before {
+    width: 50%;
+}
+
+.nav-item .nav-link:hover::after {
+    width: 50%;
+}

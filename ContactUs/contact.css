@@ -1,0 +1,71 @@
+body {
+    margin-top: 0;
+    padding: 0;
+    height: 100vh;
+    width: auto;
+    background-image: url('/Images/Contact.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.267);
+    border-radius: 1em;
+    overflow-y: auto; /* Add this line to enable vertical scrolling */
+}
+
+nav img {
+    margin-right: 50px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+nav ul {
+    margin-top: 20px;
+}
+
+nav ul li {
+    font-family: 'Tempus Sans ITC';
+    font-size: x-large;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.bg-image .link-underline{
+    border: solid 1px #000;
+    border-radius: 0.7em;
+    color: #000;
+    font-size: large;
+    background: #D2B48C;
+}
+
+@media screen and (max-width: 768px) {
+    nav img {
+        max-width: 80%; /* Adjust the max-width for small screens */
+    }
+
+    nav ul li {
+        font-size: medium;
+    }
+
+    nav ul li a {
+        font-size: 0.7em;
+    }
+
+    .bg-image .link-underline{
+        font-size: medium;
+    }
+
+    .bg-image .btn{
+        margin-bottom: 5px;
+    }
+
+}

@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Images/Black Homepage Kitten.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    transition: background-size 0.3s ease;
+}
+
+.bg-gray-gradient {
+    background: radial-gradient(circle, rgba(247, 231, 206,0.7), rgba(247, 231, 206, 0.9));
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Tempus Sans ITC";
+    font-weight: bolder;
+    color: black;
+    text-transform: uppercase;
+}
+
+.login {
+    background: radial-gradient(circle, rgba(247, 231, 206, 0.7), rgba(247, 231, 206,0.7));
+    border-radius: 0.7em;
+}
+
+
+.login h1 {
+    text-align: center;
+    font-family: "Tempus Sans ITC";
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    font-family: inherit;
+    border-radius: 5px;
+    margin-bottom: 0%;
+    font-weight: bolder;
+    background: #D2B48C;
+    border: solid 1px #000;
+}
+
+.btn:hover {
+    outline: 0;
+    transform: scale(0.98);
+    border: solid 1px #000;
+}
+
+button{
+    font-family: inherit;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.text a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 5px;
+    border: 0;
+    background: transparent;
+}
+
+.form-control input {
+    border: 0;
+    width: 100%;
+    padding: 10px 0;
+    color: #000;
+    background: transparent;
+    border-bottom: 2px solid #000;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 10x;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: #000;
+    transform: translateY(-20px) translateX(17px);
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.login {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Additional CSS for responsiveness */
+@media (max-width: 767px) {
+    .col-md-8, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-5 {
+        background: radial-gradient(circle, rgba(247, 231, 206, 0.7), rgba(247, 231, 206,0.7));
+        border-radius: 0.7em;
+        width:max-content;
+    }
+
+    .login {
+        background: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4, .col-md-8 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-md-5 {
+        background: radial-gradient(circle, rgba(247, 231, 206, 0.7), rgba(247, 231, 206,0.7));
+        border-radius: 0.7em;
+        width:max-content;
+    }
+
+    .login {
+        background: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-md-4, .col-md-8 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .col-md-5 {
+        background: radial-gradient(circle, rgba(247, 231, 206, 0.7), rgba(247, 231, 206,0.7));
+        border-radius: 0.7em;
+        width:max-content;
+    }
+
+    .login {
+        background: none;
+    }
+}

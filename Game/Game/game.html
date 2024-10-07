@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Power</title>
+    <link rel="stylesheet" href="game.css">
+    <!-- Link to Bootstrap CSS -->
+    <link href="/bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Background music -->
+    <audio hidden autoplay loop>
+        <source src="FantasyMusic.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- OpenAI prompt -->
+    <div class="container">
+        <div class="row-md-2 m-5 mb-0 h-50 p-4">
+                <p class="text-white" id="resultText"></p>
+        </div>
+        <div class="row mb-2 mt-3 h-25">
+            <input type="text" id="promptInput" placeholder="What would you do . . .">
+        </div>
+        <div>
+            <div class="d-flex justify-content-evenly">
+                <button id="generateBtn" class="button w-25 px-4 py-2 fs-4">
+                    GENERATE
+                </button>    
+                <button id="stopBtn" disabled class="button w-25 px-4 py-2 fs-4" >
+                    STOP   
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="game.js"></script>
+</body>
+</html>

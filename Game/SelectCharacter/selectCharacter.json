@@ -1,0 +1,8 @@
+{
+    "characters":
+    {
+        "mage": false,
+        "warrior": false,
+        "archer": false
+    }
+}

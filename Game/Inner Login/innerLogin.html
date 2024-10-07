@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="innerLogin.css">
+</head>
+<body class="vh-100 overflow-hidden">
+    <!---Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mt-3">
+        <div class="container">
+          <!-- logo -->
+          <a class="navbar-brand fs-4 ms-5" href="/Home/home.html">Cat World</a>
+          <!-- Toggle BTN-->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- SideBar -->
+
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            
+            <!-- Sidebar Header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- Sidebar Body-->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="/Home/home.html">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="/AboutUs/About Us.html">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="/ContactUs/contact.html">Contact</a>
+                  </li>
+              </ul>
+              <!-- Login / Sign-Up -->
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <a href="/Login/login.html" class="text-white text-decoration-none px-3 py-1 bg-gradient rounded-4">Change Account</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </nav>
+    <main>
+      <section class="word d-flex flex-column justify-content-center align-items-center text-white fs-1">
+        <h2>Welcome Hoomans</h2>
+        <h2 class="pb-4">Journey to the world of Dungeon</h2>
+        <div class="d-flex flex-column flex-lg-row">
+          <a href="/Game/SelectCharacter/selectCharacter.html" class="buts text-white text-decoration-none px-3 py-1 bg-gradient rounded-4 hover-effect">Start Game</a>
+        </div>
+      
+      </section>
+    </main>
+</body>
+</html>
