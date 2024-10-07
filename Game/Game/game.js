@@ -16,8 +16,8 @@ console.log('Selected Character:', character);
 
 /*-------------------- For OPEN AI --------------------*/
 // Constants
-const API_KEY = "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";
-const API_URL = "https://api.openai.com/v1/chat/completions";
+const API_KEY = "";
+const API_URL = "";
 
 // HTML elements
 const generateBtn = document.getElementById("generateBtn"); // Button to trigger text generation
